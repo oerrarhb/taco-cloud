@@ -1,14 +1,22 @@
 package com.othmane.oertacocloud.data;
 
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 import org.hibernate.validator.constraints.CreditCardNumber;
 
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "Orders")
 @Data
+@RequiredArgsConstructor
 public class Order {
+
+    @Id
+    private String id;
 
     @NotBlank(message = "Name is required")
     private String name;

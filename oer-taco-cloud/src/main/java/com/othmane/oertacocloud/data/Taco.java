@@ -1,13 +1,21 @@
 package com.othmane.oertacocloud.data;
 
-import lombok.Data;
-
+import java.util.List;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.List;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "Tacos")
 @Data
+@RequiredArgsConstructor
 public class Taco {
+
+    @Id
+    private String Id;
+
     @NotNull
     @Size(min = 5, message = "Name must be at least 5 characters long")
     private String name;
