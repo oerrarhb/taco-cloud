@@ -1,7 +1,9 @@
 package com.othmane.oertacocloud.data;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.hibernate.validator.constraints.CreditCardNumber;
 
 import javax.validation.constraints.Digits;
@@ -13,6 +15,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "Orders")
 @Data
 @RequiredArgsConstructor
+@Getter
+@Setter
 public class Order {
 
     @Id
