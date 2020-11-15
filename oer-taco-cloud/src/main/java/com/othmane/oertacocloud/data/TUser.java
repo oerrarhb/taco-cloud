@@ -21,7 +21,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Setter
 @Builder
 @With
-public class User {
+public class TUser {
     @Id
     private String id;
 
@@ -37,5 +37,13 @@ public class User {
     @Size(max = 50)
     @Email
     private String email;
+
+    private String fullname;
+    private String street;
+    private String city;
+    private String state;
+    private String zip;
+    private String phone;
+
 
 }

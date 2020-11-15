@@ -10,6 +10,10 @@
 <img th:src="@{/images/TacoCloud.png}"/>
 
 
+<form method="post" th:action="@{/logout}">
+    <input type="submit" value="Logout">
+</form>
+<br/>
 <form method="post" th:object="${design}">
     <div class="grid">
         <div class="ingredient-group" id="wraps">
