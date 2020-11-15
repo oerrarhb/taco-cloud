@@ -1,0 +1,8 @@
+com/othmane/oertacocloud/data/Order.class
+com/othmane/oertacocloud/data/Ingredient.class
+com/othmane/oertacocloud/controllers/DesignTacoController.class
+com/othmane/oertacocloud/data/Taco.class
+com/othmane/oertacocloud/OerTacoCloudApplication.class
+com/othmane/oertacocloud/data/Ingredient$Type.class
+com/othmane/oertacocloud/controllers/OrderController.class
+com/othmane/oertacocloud/controllers/HomeController.class
